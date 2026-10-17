@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read the Bible | Stillword</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        <span>stillword</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="books.html" data-page="books.html">Read</a>
+        <a href="search.html" data-page="search.html">Search</a>
+        <a href="saved.html" data-page="saved.html">Saved</a>
+        <a href="journal.html" data-page="journal.html">Journal</a>
+    </nav>
+</header>
+<div class="page-container">
+<main>
+<section class="page-intro">
+    <p class="eyebrow">YOUR TIME IN THE WORD</p>
+    <h1>Read the <em>Bible.</em></h1>
+    <p>Find a book, choose a chapter, and take your time.</p>
+</section>
+
+<section class="bible-browser">
+    <div class="book-search">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" id="book-search" placeholder="Search for a Bible book..." aria-label="Search Bible books">
+    </div>
+    <div class="testament-tabs" role="group" aria-label="Choose testament">
+        <button class="testament-tab active" data-testament="all" type="button">All Books</button>
+        <button class="testament-tab" data-testament="Old Testament" type="button">Old Testament</button>
+        <button class="testament-tab" data-testament="New Testament" type="button">New Testament</button>
+    </div>
+    <div id="book-results">
+            <section class="testament-section" data-section="Old Testament">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">EXPLORE SCRIPTURE</p>
+                        <h2>Old Testament</h2>
+                    </div>
+                    <span class="book-count">39 books</span>
+                </div>
+                <div class="book-list">
+                    <button class="book-item" type="button"
+                        data-name="genesis" data-testament="Old Testament"
+                        data-book-id="GEN" data-chapters="50" data-book-name="Genesis">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Genesis</span>
+                        <span class="book-item-meta">50 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="exodus" data-testament="Old Testament"
+                        data-book-id="EXO" data-chapters="40" data-book-name="Exodus">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Exodus</span>
+                        <span class="book-item-meta">40 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="leviticus" data-testament="Old Testament"
+                        data-book-id="LEV" data-chapters="27" data-book-name="Leviticus">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Leviticus</span>
+                        <span class="book-item-meta">27 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="numbers" data-testament="Old Testament"
+                        data-book-id="NUM" data-chapters="36" data-book-name="Numbers">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Numbers</span>
+                        <span class="book-item-meta">36 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="deuteronomy" data-testament="Old Testament"
+                        data-book-id="DEU" data-chapters="34" data-book-name="Deuteronomy">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Deuteronomy</span>
+                        <span class="book-item-meta">34 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="joshua" data-testament="Old Testament"
+                        data-book-id="JOS" data-chapters="24" data-book-name="Joshua">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Joshua</span>
+                        <span class="book-item-meta">24 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="judges" data-testament="Old Testament"
+                        data-book-id="JDG" data-chapters="21" data-book-name="Judges">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Judges</span>
+                        <span class="book-item-meta">21 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="ruth" data-testament="Old Testament"
+                        data-book-id="RUT" data-chapters="4" data-book-name="Ruth">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Ruth</span>
+                        <span class="book-item-meta">4 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 samuel" data-testament="Old Testament"
+                        data-book-id="1SA" data-chapters="31" data-book-name="1 Samuel">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Samuel</span>
+                        <span class="book-item-meta">31 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 samuel" data-testament="Old Testament"
+                        data-book-id="2SA" data-chapters="24" data-book-name="2 Samuel">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Samuel</span>
+                        <span class="book-item-meta">24 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 kings" data-testament="Old Testament"
+                        data-book-id="1KI" data-chapters="22" data-book-name="1 Kings">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Kings</span>
+                        <span class="book-item-meta">22 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 kings" data-testament="Old Testament"
+                        data-book-id="2KI" data-chapters="25" data-book-name="2 Kings">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Kings</span>
+                        <span class="book-item-meta">25 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 chronicles" data-testament="Old Testament"
+                        data-book-id="1CH" data-chapters="29" data-book-name="1 Chronicles">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Chronicles</span>
+                        <span class="book-item-meta">29 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 chronicles" data-testament="Old Testament"
+                        data-book-id="2CH" data-chapters="36" data-book-name="2 Chronicles">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Chronicles</span>
+                        <span class="book-item-meta">36 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="ezra" data-testament="Old Testament"
+                        data-book-id="EZR" data-chapters="10" data-book-name="Ezra">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Ezra</span>
+                        <span class="book-item-meta">10 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="nehemiah" data-testament="Old Testament"
+                        data-book-id="NEH" data-chapters="13" data-book-name="Nehemiah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Nehemiah</span>
+                        <span class="book-item-meta">13 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="esther" data-testament="Old Testament"
+                        data-book-id="EST" data-chapters="10" data-book-name="Esther">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Esther</span>
+                        <span class="book-item-meta">10 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="job" data-testament="Old Testament"
+                        data-book-id="JOB" data-chapters="42" data-book-name="Job">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Job</span>
+                        <span class="book-item-meta">42 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="psalms" data-testament="Old Testament"
+                        data-book-id="PSA" data-chapters="150" data-book-name="Psalms">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Psalms</span>
+                        <span class="book-item-meta">150 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="proverbs" data-testament="Old Testament"
+                        data-book-id="PRO" data-chapters="31" data-book-name="Proverbs">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Proverbs</span>
+                        <span class="book-item-meta">31 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="ecclesiastes" data-testament="Old Testament"
+                        data-book-id="ECC" data-chapters="12" data-book-name="Ecclesiastes">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Ecclesiastes</span>
+                        <span class="book-item-meta">12 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="song of solomon" data-testament="Old Testament"
+                        data-book-id="SNG" data-chapters="8" data-book-name="Song of Solomon">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Song of Solomon</span>
+                        <span class="book-item-meta">8 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="isaiah" data-testament="Old Testament"
+                        data-book-id="ISA" data-chapters="66" data-book-name="Isaiah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Isaiah</span>
+                        <span class="book-item-meta">66 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="jeremiah" data-testament="Old Testament"
+                        data-book-id="JER" data-chapters="52" data-book-name="Jeremiah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Jeremiah</span>
+                        <span class="book-item-meta">52 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="lamentations" data-testament="Old Testament"
+                        data-book-id="LAM" data-chapters="5" data-book-name="Lamentations">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Lamentations</span>
+                        <span class="book-item-meta">5 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="ezekiel" data-testament="Old Testament"
+                        data-book-id="EZK" data-chapters="48" data-book-name="Ezekiel">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Ezekiel</span>
+                        <span class="book-item-meta">48 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="daniel" data-testament="Old Testament"
+                        data-book-id="DAN" data-chapters="12" data-book-name="Daniel">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Daniel</span>
+                        <span class="book-item-meta">12 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="hosea" data-testament="Old Testament"
+                        data-book-id="HOS" data-chapters="14" data-book-name="Hosea">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Hosea</span>
+                        <span class="book-item-meta">14 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="joel" data-testament="Old Testament"
+                        data-book-id="JOL" data-chapters="3" data-book-name="Joel">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Joel</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="amos" data-testament="Old Testament"
+                        data-book-id="AMO" data-chapters="9" data-book-name="Amos">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Amos</span>
+                        <span class="book-item-meta">9 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="obadiah" data-testament="Old Testament"
+                        data-book-id="OBA" data-chapters="1" data-book-name="Obadiah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Obadiah</span>
+                        <span class="book-item-meta">1 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="jonah" data-testament="Old Testament"
+                        data-book-id="JON" data-chapters="4" data-book-name="Jonah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Jonah</span>
+                        <span class="book-item-meta">4 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="micah" data-testament="Old Testament"
+                        data-book-id="MIC" data-chapters="7" data-book-name="Micah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Micah</span>
+                        <span class="book-item-meta">7 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="nahum" data-testament="Old Testament"
+                        data-book-id="NAM" data-chapters="3" data-book-name="Nahum">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Nahum</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="habakkuk" data-testament="Old Testament"
+                        data-book-id="HAB" data-chapters="3" data-book-name="Habakkuk">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Habakkuk</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="zephaniah" data-testament="Old Testament"
+                        data-book-id="ZEP" data-chapters="3" data-book-name="Zephaniah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Zephaniah</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="haggai" data-testament="Old Testament"
+                        data-book-id="HAG" data-chapters="2" data-book-name="Haggai">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Haggai</span>
+                        <span class="book-item-meta">2 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="zechariah" data-testament="Old Testament"
+                        data-book-id="ZEC" data-chapters="14" data-book-name="Zechariah">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Zechariah</span>
+                        <span class="book-item-meta">14 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="malachi" data-testament="Old Testament"
+                        data-book-id="MAL" data-chapters="4" data-book-name="Malachi">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Malachi</span>
+                        <span class="book-item-meta">4 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </section>
+            <section class="testament-section" data-section="New Testament">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">EXPLORE SCRIPTURE</p>
+                        <h2>New Testament</h2>
+                    </div>
+                    <span class="book-count">27 books</span>
+                </div>
+                <div class="book-list">
+                    <button class="book-item" type="button"
+                        data-name="matthew" data-testament="New Testament"
+                        data-book-id="MAT" data-chapters="28" data-book-name="Matthew">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Matthew</span>
+                        <span class="book-item-meta">28 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="mark" data-testament="New Testament"
+                        data-book-id="MRK" data-chapters="16" data-book-name="Mark">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Mark</span>
+                        <span class="book-item-meta">16 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="luke" data-testament="New Testament"
+                        data-book-id="LUK" data-chapters="24" data-book-name="Luke">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Luke</span>
+                        <span class="book-item-meta">24 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="john" data-testament="New Testament"
+                        data-book-id="JHN" data-chapters="21" data-book-name="John">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">John</span>
+                        <span class="book-item-meta">21 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="acts" data-testament="New Testament"
+                        data-book-id="ACT" data-chapters="28" data-book-name="Acts">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Acts</span>
+                        <span class="book-item-meta">28 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="romans" data-testament="New Testament"
+                        data-book-id="ROM" data-chapters="16" data-book-name="Romans">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Romans</span>
+                        <span class="book-item-meta">16 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 corinthians" data-testament="New Testament"
+                        data-book-id="1CO" data-chapters="16" data-book-name="1 Corinthians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Corinthians</span>
+                        <span class="book-item-meta">16 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 corinthians" data-testament="New Testament"
+                        data-book-id="2CO" data-chapters="13" data-book-name="2 Corinthians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Corinthians</span>
+                        <span class="book-item-meta">13 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="galatians" data-testament="New Testament"
+                        data-book-id="GAL" data-chapters="6" data-book-name="Galatians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Galatians</span>
+                        <span class="book-item-meta">6 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="ephesians" data-testament="New Testament"
+                        data-book-id="EPH" data-chapters="6" data-book-name="Ephesians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Ephesians</span>
+                        <span class="book-item-meta">6 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="philippians" data-testament="New Testament"
+                        data-book-id="PHP" data-chapters="4" data-book-name="Philippians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Philippians</span>
+                        <span class="book-item-meta">4 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="colossians" data-testament="New Testament"
+                        data-book-id="COL" data-chapters="4" data-book-name="Colossians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Colossians</span>
+                        <span class="book-item-meta">4 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 thessalonians" data-testament="New Testament"
+                        data-book-id="1TH" data-chapters="5" data-book-name="1 Thessalonians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Thessalonians</span>
+                        <span class="book-item-meta">5 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 thessalonians" data-testament="New Testament"
+                        data-book-id="2TH" data-chapters="3" data-book-name="2 Thessalonians">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Thessalonians</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 timothy" data-testament="New Testament"
+                        data-book-id="1TI" data-chapters="6" data-book-name="1 Timothy">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Timothy</span>
+                        <span class="book-item-meta">6 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 timothy" data-testament="New Testament"
+                        data-book-id="2TI" data-chapters="4" data-book-name="2 Timothy">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Timothy</span>
+                        <span class="book-item-meta">4 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="titus" data-testament="New Testament"
+                        data-book-id="TIT" data-chapters="3" data-book-name="Titus">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Titus</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="philemon" data-testament="New Testament"
+                        data-book-id="PHM" data-chapters="1" data-book-name="Philemon">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Philemon</span>
+                        <span class="book-item-meta">1 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="hebrews" data-testament="New Testament"
+                        data-book-id="HEB" data-chapters="13" data-book-name="Hebrews">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Hebrews</span>
+                        <span class="book-item-meta">13 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="james" data-testament="New Testament"
+                        data-book-id="JAS" data-chapters="5" data-book-name="James">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">James</span>
+                        <span class="book-item-meta">5 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 peter" data-testament="New Testament"
+                        data-book-id="1PE" data-chapters="5" data-book-name="1 Peter">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 Peter</span>
+                        <span class="book-item-meta">5 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 peter" data-testament="New Testament"
+                        data-book-id="2PE" data-chapters="3" data-book-name="2 Peter">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 Peter</span>
+                        <span class="book-item-meta">3 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="1 john" data-testament="New Testament"
+                        data-book-id="1JN" data-chapters="5" data-book-name="1 John">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">1 John</span>
+                        <span class="book-item-meta">5 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="2 john" data-testament="New Testament"
+                        data-book-id="2JN" data-chapters="1" data-book-name="2 John">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">2 John</span>
+                        <span class="book-item-meta">1 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="3 john" data-testament="New Testament"
+                        data-book-id="3JN" data-chapters="1" data-book-name="3 John">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">3 John</span>
+                        <span class="book-item-meta">1 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="jude" data-testament="New Testament"
+                        data-book-id="JUD" data-chapters="1" data-book-name="Jude">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Jude</span>
+                        <span class="book-item-meta">1 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <button class="book-item" type="button"
+                        data-name="revelation" data-testament="New Testament"
+                        data-book-id="REV" data-chapters="22" data-book-name="Revelation">
+                        <span class="book-icon" aria-hidden="true">✧</span>
+                        <span class="book-item-name">Revelation</span>
+                        <span class="book-item-meta">22 chapters</span>
+                        <span class="book-arrow" aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </section>
+    </div>
+    <p class="empty-books" id="empty-books" hidden>No books found. Try another search.</p>
+</section>
+
+<!-- Chapter selection and reading panel -->
+<section class="reader-panel" id="reader-panel" hidden>
+    <div class="reader-top">
+        <div>
+            <p class="eyebrow">TAKE A MOMENT</p>
+            <h2 id="reader-title">Genesis 1</h2>
+            <p class="reader-subtitle">Read slowly. Reflect freely.</p>
+        </div>
+        <button class="close-reader" id="close-reader" type="button" aria-label="Close reader">
+            ×
+        </button>
+    </div>
+
+    
+<div class="chapter-picker">
+    <label for="chapter-select">Choose chapter</label>
+    <select id="chapter-select"></select>
+
+    <label for="reader-translation">Bible translation</label>
+    <select id="reader-translation">
+        <optgroup label="English">
+            <option value="kjv">King James Version (KJV)</option>
+            <option value="web">World English Bible (WEB)</option>
+            <option value="asv">American Standard Version (ASV)</option>
+        </optgroup>
+    </select>
+
+    <button class="primary-button" id="load-chapter" type="button">
+        Read chapter
+    </button>
+</div>
+
+
+    <p class="reader-status" id="reader-status" aria-live="polite">
+        Choose a chapter to begin reading.
+    </p>
+
+    <div class="verse-list" id="verse-list"></div>
+
+    <div class="chapter-navigation">
+        <button class="secondary-button" id="previous-chapter" type="button">
+            ← Previous
+        </button>
+        <span id="chapter-position"></span>
+        <button class="secondary-button" id="next-chapter" type="button">
+            Next →
+        </button>
+    </div>
+</section>
+</main>
+
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="index.html" class="footer-brand">stillword <span>✦</span></a>
+        <p class="footer-tagline">A quiet place for the Word.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-heading">Developed by</p>
+        <p class="footer-developers">Jelai P. Fabricante <span>&amp;</span> Joana May B. Rosas</p>
+        <p class="footer-credit">Bible text provided through the Bible API.</p>
+        <p class="footer-note">Take your time. Read at your own pace.</p>
+        <p class="footer-copyright">© 2026 Stillword · Academic Project</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection Journal | Stillword</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        <span>stillword</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="books.html" data-page="books.html">Read</a>
+        <a href="search.html" data-page="search.html">Search</a>
+        <a href="saved.html" data-page="saved.html">Saved</a>
+        <a href="journal.html" data-page="journal.html">Journal</a>
+    </nav>
+</header>
+<div class="page-container">
+<main class="reflect-page">
+    <section class="reflect-hero">
+        <p class="reflect-eyebrow">STILLWORD · PERSONAL REFLECTION</p>
+        <h1>A moment to reflect.</h1>
+        <p>
+            Take a quiet moment to think about what you've read,
+            what it means to you, and how you can apply it.
+        </p>
+    </section>
+
+    <section class="reflect-editor">
+        <div class="reflect-section-heading">
+            <div>
+                <p class="reflect-eyebrow">YOUR QUIET SPACE</p>
+                <h2 id="reflect-form-title">A new reflection</h2>
+            </div>
+            <span class="reflect-leaf" aria-hidden="true">✿</span>
+        </div>
+
+        <form id="reflect-form">
+            <label for="reflect-title">Reflection title</label>
+            <input
+                type="text"
+                id="reflect-title"
+                placeholder="e.g., Learning to trust"
+                maxlength="100"
+            >
+
+            <label for="reflect-reference">Bible reference</label>
+            <input
+                type="text"
+                id="reflect-reference"
+                placeholder="e.g., Psalm 23:1"
+                maxlength="100"
+            >
+
+            <div class="reflect-prompt">
+                <label for="reflect-learned">1. What stood out to you?</label>
+                <p>Which verse, message, or idea caught your attention?</p>
+                <textarea
+                    id="reflect-learned"
+                    rows="4"
+                    placeholder="Write your thoughts here..."
+                    required
+                ></textarea>
+            </div>
+
+            <div class="reflect-prompt">
+                <label for="reflect-meaning">2. What did you learn?</label>
+                <p>What did this passage help you understand?</p>
+                <textarea
+                    id="reflect-meaning"
+                    rows="4"
+                    placeholder="What meaning did you find?"
+                ></textarea>
+            </div>
+
+            <div class="reflect-prompt">
+                <label for="reflect-application">3. How can you apply it?</label>
+                <p>Is there something you want to remember or practice?</p>
+                <textarea
+                    id="reflect-application"
+                    rows="4"
+                    placeholder="Write your personal application..."
+                ></textarea>
+            </div>
+
+            <p id="reflect-message" class="reflect-message"
+               role="status" aria-live="polite"></p>
+
+            <div class="reflect-actions">
+                <button type="submit" class="reflect-primary-btn"
+                        id="reflect-save-btn">
+                    Save reflection
+                </button>
+                <button type="button" class="reflect-secondary-btn"
+                        id="reflect-clear-btn">
+                    Clear form
+                </button>
+                <button type="button" class="reflect-secondary-btn"
+                        id="reflect-cancel-btn" hidden>
+                    Cancel editing
+                </button>
+            </div>
+        </form>
+
+        <p class="reflect-privacy-note">
+            Your reflections are saved locally in this browser.
+            They are not uploaded to a server.
+        </p>
+    </section>
+
+    <section class="reflect-entries">
+       
+<section class="reflect-entries">
+    <div class="reflect-section-heading">
+        <div>
+            <p class="reflect-eyebrow">YOUR WRITING</p>
+            <h2>Past reflections</h2>
+        </div>
+
+        <div class="reflect-heading-actions">
+            <span id="reflect-count" class="reflect-count">0 entries</span>
+            <button
+                type="button"
+                id="reflect-download-btn"
+                class="reflect-secondary-btn"
+            >
+                Download reflections
+            </button>
+        </div>
+    </div>
+
+
+        <div id="reflect-entries-list"></div>
+
+        <div id="reflect-empty" class="reflect-empty">
+            <span aria-hidden="true">❀</span>
+            <h3>Your space is waiting.</h3>
+            <p>Your saved reflections will appear here when you write one.</p>
+        </div>
+    </section>
+</main>
+
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="index.html" class="footer-brand">stillword <span>✦</span></a>
+        <p class="footer-tagline">A quiet place for the Word.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-heading">Developed by</p>
+        <p class="footer-developers">Jelai P. Fabricante <span>&amp;</span> Joana May B. Rosas</p>
+        <p class="footer-credit">Bible text provided through the Bible API.</p>
+        <p class="footer-note">Take your time. Read at your own pace.</p>
+        <p class="footer-copyright">© 2026 Stillword · Academic Project</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

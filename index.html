@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Stillword</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        <span>stillword</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="books.html" data-page="books.html">Read</a>
+        <a href="search.html" data-page="search.html">Search</a>
+        <a href="saved.html" data-page="saved.html">Saved</a>
+        <a href="journal.html" data-page="journal.html">Journal</a>
+    </nav>
+</header>
+<div class="page-container">
+<!-- HERO SECTION -->
+<section class="welcome-section">
+
+    <div class="welcome-copy">
+        <p class="eyebrow">A MOMENT OF STILLNESS</p>
+
+        <h1>
+            Find a little peace<br>
+            in the <span>Word.</span>
+        </h1>
+
+        <p class="welcome-description">
+            Read, reflect, and discover Scripture at your own pace.
+            Take a breath. You're right where you need to be.
+        </p>
+
+        <a href="books.html" class="primary-button">
+            Start reading <span aria-hidden="true">→</span>
+        </a>
+
+        <p class="hero-note">
+            <span>✦</span> A little time for yourself and your faith.
+        </p>
+    </div>
+
+    <div class="welcome-decoration" aria-hidden="true">
+
+        <div class="sun-circle"></div>
+
+        <div class="book-illustration">
+            <span class="book-cross">✝</span>
+            <span class="book-title">HOLY<br>SCRIPTURE</span>
+            <span class="book-lines"></span>
+        </div>
+
+        <span class="decor-leaf leaf-one">❧</span>
+        <span class="decor-leaf leaf-two">❧</span>
+        <span class="decor-star star-one">✦</span>
+        <span class="decor-star star-two">✧</span>
+
+    </div>
+
+</section>
+
+
+<!-- DAILY VERSE SECTION -->
+<section class="verse-section">
+
+    <div class="section-heading">
+
+        <div>
+            <p class="eyebrow">A DAILY REMINDER</p>
+            <h2>A little wisdom for today</h2>
+        </div>
+
+        <span class="round-icon" aria-hidden="true">✧</span>
+
+    </div>
+
+    <article class="verse-card">
+
+        <div class="verse-card-top">
+            <span class="verse-label">TODAY'S SCRIPTURE</span>
+            <span class="verse-reference" id="verse-reference">
+                Loading verse...
+            </span>
+        </div>
+
+        <div class="verse-content">
+
+            <span class="quote-mark" aria-hidden="true">“</span>
+
+            <p class="daily-verse" id="daily-verse" aria-live="polite">
+                Your verse is on its way...
+            </p>
+
+        </div>
+
+        <p class="verse-error" id="verse-error" hidden>
+            We couldn't load a verse right now. Check your internet
+            connection and try again.
+        </p>
+
+        <div class="verse-card-bottom">
+
+            <span class="translation-label">
+                King James Version · KJV
+            </span>
+
+            <button
+                class="text-button"
+                id="refresh-verse"
+                type="button"
+            >
+                Another verse <span aria-hidden="true">↻</span>
+            </button>
+
+        </div>
+
+    </article>
+
+</section>
+
+
+<!-- QUICK ACCESS SECTION -->
+<section class="explore-section">
+
+    <div class="section-heading explore-heading">
+
+        <div>
+            <p class="eyebrow">YOUR PERSONAL SPACE</p>
+            <h2>Where would you like to begin?</h2>
+            <p class="section-description">
+                Make room for reading, remembering, and reflecting.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <!-- READ -->
+        <a href="books.html" class="feature-card">
+
+            <span class="feature-icon sage" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.6"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 7v14"></path>
+                    <path d="M3 4.5A2.5 2.5 0 0 1 5.5 2H12v19H5.5A2.5 2.5 0 0 0 3 23.5z"
+                          transform="translate(0 -1)"></path>
+                    <path d="M21 4.5A2.5 2.5 0 0 0 18.5 2H12v19h6.5a2.5 2.5 0 0 1 2.5 2.5z"
+                          transform="translate(0 -1)"></path>
+                </svg>
+            </span>
+
+            <span class="feature-category">EXPLORE SCRIPTURE</span>
+
+            <h3>Read the Bible</h3>
+
+            <p>
+                Explore Bible books, chapters, and verses.
+            </p>
+
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+
+        </a>
+
+
+        <!-- SEARCH -->
+        <a href="search.html" class="feature-card">
+
+            <span class="feature-icon peach" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round">
+                    <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                    <path d="m16 16 5 5"></path>
+                </svg>
+            </span>
+
+            <span class="feature-category">FIND A PASSAGE</span>
+
+            <h3>Find a verse</h3>
+
+            <p>
+                Look up a Scripture reference or keyword.
+            </p>
+
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+
+        </a>
+
+
+        <!-- SAVED -->
+        <a href="saved.html" class="feature-card">
+
+            <span class="feature-icon lavender" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8z"></path>
+                </svg>
+            </span>
+
+            <span class="feature-category">KEEP WHAT MATTERS</span>
+
+            <h3>Saved verses</h3>
+
+            <p>
+                Keep your favorite verses in one place.
+            </p>
+
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+
+        </a>
+
+
+        <!-- JOURNAL -->
+        <a href="journal.html" class="feature-card">
+
+            <span class="feature-icon yellow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.7"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4z"></path>
+                </svg>
+            </span>
+
+            <span class="feature-category">YOUR QUIET CORNER</span>
+
+            <h3>Reflection journal</h3>
+
+            <p>
+                Write your thoughts, prayers, and reflections.
+            </p>
+
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CLOSING NOTE -->
+<section class="closing-note">
+
+    <span class="closing-flower" aria-hidden="true">✿</span>
+
+    <p class="closing-quote">
+        "Be still, and know that I am God."
+    </p>
+
+    <p class="closing-reference">Psalm 46:10 · KJV</p>
+
+</section>
+
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="index.html" class="footer-brand">stillword <span>✦</span></a>
+        <p class="footer-tagline">A quiet place for the Word.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-heading">Developed by</p>
+        <p class="footer-developers">Jelai P. Fabricante <span>&amp;</span> Joana May B. Rosas</p>
+        <p class="footer-credit">Bible text provided through the Bible API.</p>
+        <p class="footer-note">Take your time. Read at your own pace.</p>
+        <p class="footer-copyright">© 2026 Stillword · Academic Project</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

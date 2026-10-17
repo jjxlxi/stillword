@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Verses | Stillword</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        <span>stillword</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="books.html" data-page="books.html">Read</a>
+        <a href="search.html" data-page="search.html">Search</a>
+        <a href="saved.html" data-page="saved.html">Saved</a>
+        <a href="journal.html" data-page="journal.html">Journal</a>
+    </nav>
+</header>
+<div class="page-container">
+<main class="saved-page">
+
+    <!-- Page introduction -->
+    <section class="saved-hero">
+        <p class="eyebrow">YOUR PERSONAL COLLECTION</p>
+        <h1>Words worth keeping.</h1>
+        <p>
+            Keep the verses that comfort you, inspire you,
+            or remind you of what matters.
+        </p>
+    </section>
+
+    <!-- Saved verse collection -->
+    <section class="saved-section">
+        <div class="saved-heading">
+            <div>
+                <p class="eyebrow">BOOKMARKED SCRIPTURE</p>
+                <h2>Your saved verses</h2>
+            </div>
+
+            <span id="saved-count" class="saved-count">0 verses</span>
+        </div>
+
+        <div id="saved-verses-list" class="saved-verses-list">
+            <!-- Saved verses are rendered by JavaScript. -->
+        </div>
+
+        <div id="saved-empty" class="saved-empty">
+            <span class="saved-empty-icon" aria-hidden="true">♡</span>
+            <h3>A little space for your favorites.</h3>
+            <p>
+                When a verse speaks to you, bookmark it while reading.
+                It will be kept here for you to revisit.
+            </p>
+            <a class="saved-browse-button" href="books.html">
+                Explore Scripture
+            </a>
+        </div>
+
+        <p id="saved-message" class="saved-message" role="status" hidden></p>
+    </section>
+
+</main>
+
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="index.html" class="footer-brand">stillword <span>✦</span></a>
+        <p class="footer-tagline">A quiet place for the Word.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-heading">Developed by</p>
+        <p class="footer-developers">Jelai P. Fabricante <span>&amp;</span> Joana May B. Rosas</p>
+        <p class="footer-credit">Bible text provided through the Bible API.</p>
+        <p class="footer-note">Take your time. Read at your own pace.</p>
+        <p class="footer-copyright">© 2026 Stillword · Academic Project</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

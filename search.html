@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripture Search | Stillword</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="index.html">
+        <span class="brand-icon">✦</span>
+        <span>stillword</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="books.html" data-page="books.html">Read</a>
+        <a href="search.html" data-page="search.html">Search</a>
+        <a href="saved.html" data-page="saved.html">Saved</a>
+        <a href="journal.html" data-page="journal.html">Journal</a>
+    </nav>
+</header>
+<div class="page-container">
+<main class="search-page">
+
+    <!-- Page introduction -->
+    <section class="search-hero">
+        <p class="eyebrow">A QUIET PLACE TO DISCOVER</p>
+        <h1>Find words that <span>speak to you.</span></h1>
+        <p>
+            Search for a Bible passage or find Scripture
+            that contains a word close to your heart.
+        </p>
+    </section>
+
+    <!-- Search panel -->
+    <section class="scripture-search-section">
+
+        <div class="search-panel">
+
+            <div class="search-tabs" role="group" aria-label="Search type">
+                <button
+                    type="button"
+                    class="search-tab active"
+                    data-mode="keyword"
+                    aria-pressed="true">
+                    Keyword search
+                </button>
+
+                <button
+                    type="button"
+                    class="search-tab"
+                    data-mode="reference"
+                    aria-pressed="false">
+                    Bible reference
+                </button>
+            </div>
+
+            <form id="scripture-search-form">
+
+                <label for="scripture-query" id="search-label">
+                    What word would you like to find?
+                </label>
+
+                <div class="search-input-row">
+                    <input
+                        type="search"
+                        id="scripture-query"
+                        name="query"
+                        placeholder="Try: love, hope, peace..."
+                        required
+                        autocomplete="off">
+
+                    <button type="submit" class="button button-primary">
+                        Search <span aria-hidden="true">&rarr;</span>
+                    </button>
+                </div>
+
+                <p class="search-hint" id="search-hint">
+                    Find verses containing your chosen word.
+                </p>
+
+                <div class="translation-row">
+                    <label for="translation-select">Bible translation</label>
+
+                    <select id="translation-select">
+                        <option value="kjv">King James Version (KJV)</option>
+                        <option value="web">World English Bible (WEB)</option>
+                    </select>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Example searches -->
+        <div class="suggested-searches">
+            <p>Need a place to start?</p>
+
+            <div class="suggestion-list">
+                <button type="button" class="suggestion-chip" data-query="hope">
+                    Hope
+                </button>
+
+                <button type="button" class="suggestion-chip" data-query="peace">
+                    Peace
+                </button>
+
+                <button type="button" class="suggestion-chip" data-query="love">
+                    Love
+                </button>
+
+                <button type="button" class="suggestion-chip" data-query="John 3:16">
+                    John 3:16
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Search results appear here -->
+    <section class="search-results-section" aria-live="polite">
+
+        <div class="results-heading">
+            <div>
+                <p class="eyebrow">YOUR DISCOVERY</p>
+                <h2 id="results-title">Scripture for your moment</h2>
+            </div>
+
+            <p id="results-count" class="results-count"></p>
+        </div>
+
+        <p id="search-status" class="search-status">
+            Enter a keyword or Bible reference to begin.
+        </p>
+
+        <div id="search-results" class="search-results"></div>
+
+    </section>
+
+</main>
+
+</div>
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="index.html" class="footer-brand">stillword <span>✦</span></a>
+        <p class="footer-tagline">A quiet place for the Word.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-heading">Developed by</p>
+        <p class="footer-developers">Jelai P. Fabricante <span>&amp;</span> Joana May B. Rosas</p>
+        <p class="footer-credit">Bible text provided through the Bible API.</p>
+        <p class="footer-note">Take your time. Read at your own pace.</p>
+        <p class="footer-copyright">© 2026 Stillword · Academic Project</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
