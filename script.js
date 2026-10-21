@@ -328,10 +328,10 @@ function openBook(bookElement) {
     updateChapterNavigation();
     loadChapter();
 
-    readerPanel.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
+    readerTitle.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+});
 }
 
 bookItems.forEach((book) => {
@@ -446,6 +446,22 @@ async function loadChapter() {
         readerStatus.textContent =
             `${data.reference || reference} · ` +
             translationNames[translation];
+
+        requestAnimationFrame(() => {
+    const header = document.querySelector(".site-header");
+    const headerHeight = header
+        ? header.getBoundingClientRect().height
+        : 0;
+
+    const panelTop =
+        readerPanel.getBoundingClientRect().top +
+        window.scrollY;
+
+    window.scrollTo({
+        top: Math.max(0, panelTop - headerHeight - 12),
+        behavior: "auto"
+    });
+});    
     } catch (error) {
         if (thisRequest !== requestNumber) return;
 
