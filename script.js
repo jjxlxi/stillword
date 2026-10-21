@@ -37,9 +37,7 @@ const verseReferences = [
 let lastVerseIndex = -1;
 
 
-/**
- * Loads a Bible verse using bible-api.com.
- */
+/* Loads a Bible verse using bible-api.com. */
 async function loadDailyVerse() {
     if (
         !dailyVerseElement ||

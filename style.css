@@ -59,7 +59,16 @@ a:focus-visible {
     align-items: center;
     gap: 24px;
     border-bottom: 1px solid var(--border);
-    background: var(--background);
+
+    /* Translucent background with blur */
+    background: rgba(250, 248, 242, 0.90);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    /* Keep navigation visible while scrolling */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .brand {
@@ -2141,3 +2150,35 @@ button {
         margin-left: auto;
     }
 }
+
+#reader-title{
+    scroll-margin-top: 100px;
+}
+
+/* STILLWORD — visible scrollbar */
+
+/* Firefox */
+html {
+    scrollbar-width: auto;
+    scrollbar-color: #879982 #f1eee5;
+}
+
+/* Chrome, Edge, and other WebKit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1eee5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #879982;
+    border-radius: 10px;
+    border: 2px solid #f1eee5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #647b63;
+}
+
