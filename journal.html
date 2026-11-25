@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<header class="site-header">
-    <a class="brand" href="index.html">
+<body data-auth-required="true" data-auth-page="journal"><header class="site-header">
+    <a class="brand" href="home.html">
         <span class="brand-icon">✦</span>
         <span>stillword</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html" data-page="index.html">Home</a>
+        <a href="home.html" data-page="home.html">Home</a>
         <a href="books.html" data-page="books.html">Read</a>
         <a href="search.html" data-page="search.html">Search</a>
         <a href="saved.html" data-page="saved.html">Saved</a>
@@ -116,7 +115,6 @@
         </p>
     </section>
 
-    <section class="reflect-entries">
        
 <section class="reflect-entries">
     <div class="reflect-section-heading">
@@ -161,6 +159,5 @@
         <p class="footer-copyright">© 2026 Stillword · Academic Project</p>
     </div>
 </footer>
-<script src="script.js"></script>
-</body>
+<script type="module" src="auth-guard.js"></script></body>
 </html>

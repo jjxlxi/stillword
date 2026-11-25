@@ -2182,3 +2182,52 @@ html {
     background: #647b63;
 }
 
+/* AUTHENTICATED USER NAVIGATION */
+
+#auth-nav-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.auth-user-email {
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.auth-logout-button {
+    background: transparent;
+    color: var(--green-dark);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 8px 12px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+}
+
+.auth-logout-button:hover {
+    background: var(--green-soft);
+}
+
+@media (max-width: 600px) {
+    #auth-nav-actions {
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 8px;
+    }
+
+    .auth-user-email {
+        max-width: 190px;
+    }
+}

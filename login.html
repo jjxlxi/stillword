@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#faf8f2">
+
+    <title>Log in | Stillword</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .auth-page {
+            min-height: 100vh;
+            background: #faf8f2;
+            color: #303b32;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .auth-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 7%;
+        }
+
+        .auth-header a {
+            text-decoration: none;
+            color: #465c48;
+        }
+
+        .auth-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .auth-back {
+            font-size: 14px;
+        }
+
+        .auth-container {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .auth-card {
+            width: 100%;
+            max-width: 430px;
+            background: #ffffff;
+            padding: 45px 38px;
+            border: 1px solid #eae9e0;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(48, 59, 50, 0.05);
+        }
+
+        .auth-flower {
+            text-align: center;
+            color: #647b63;
+            font-size: 30px;
+        }
+
+        .auth-eyebrow {
+            text-align: center;
+            color: #858b80;
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-top: 15px;
+        }
+
+        .auth-card h1 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 500;
+            margin: 12px 0;
+        }
+
+        .auth-card h1 em {
+            color: #647b63;
+        }
+
+        .auth-description {
+            text-align: center;
+            color: #858b80;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .auth-form label {
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .auth-form input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 14px;
+            border: 1px solid #eae9e0;
+            border-radius: 8px;
+            background: #faf8f2;
+            color: #303b32;
+            font: inherit;
+            outline: none;
+        }
+
+        .auth-form input:focus {
+            border-color: #647b63;
+        }
+
+        .auth-forgot {
+            align-self: flex-end;
+            border: none;
+            background: none;
+            color: #647b63;
+            cursor: pointer;
+            font: inherit;
+            font-size: 12px;
+            margin: 5px 0 12px;
+        }
+
+        .auth-submit {
+            width: 100%;
+            padding: 14px;
+            background: #647b63;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .auth-submit:hover {
+            background: #465c48;
+        }
+
+        .auth-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .auth-message {
+            min-height: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #465c48;
+        }
+
+        .auth-message.is-error {
+            color: #b54747;
+        }
+
+        .auth-switch {
+            text-align: center;
+            font-size: 13px;
+            color: #858b80;
+            margin-top: 25px;
+        }
+
+        .auth-switch a {
+            color: #647b63;
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            .auth-card {
+                padding: 35px 23px;
+            }
+
+            .auth-card h1 {
+                font-size: 30px;
+            }
+
+            .auth-header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="auth-page" data-auth-page="login">
+
+    <header class="auth-header">
+
+        <a href="index.html" class="auth-brand">
+            ✦ stillword
+        </a>
+
+        <a href="index.html" class="auth-back">
+            ← Back to preview
+        </a>
+
+    </header>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="auth-flower">✿</div>
+
+            <p class="auth-eyebrow">
+                A QUIET PLACE FOR THE WORD
+            </p>
+
+            <h1>
+                Welcome <em>back.</em>
+            </h1>
+
+            <p class="auth-description">
+                Log in to continue reading, searching,
+                and reflecting with Stillword.
+            </p>
+
+            <form id="login-form" class="auth-form">
+
+                <label for="login-email">
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="login-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="login-password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="login-password"
+                    name="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button
+                    type="button"
+                    id="forgot-password"
+                    class="auth-forgot"
+                >
+                    Forgot password?
+                </button>
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Log in →
+                </button>
+
+                <p
+                    id="login-message"
+                    class="auth-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <p class="auth-switch">
+                New to Stillword?
+                <a href="signup.html">Create an account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="auth-guard.js"></script>
+
+</body>
+</html>
